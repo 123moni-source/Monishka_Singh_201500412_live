@@ -18,7 +18,10 @@
             font-size: large;
         }
 
-        .logo {
+        h1 {
+            font-size: x-large;
+        }
+        .Logo {
             width: 70px;
             height: 70px;
             background-color: rgba(213, 43, 43, 0.932);
@@ -78,7 +81,7 @@
             align-items: center;
         }
 
-        #btn {
+        #button {
             width: 150px;
             position: fixed;
             top: 10px;
@@ -92,17 +95,23 @@
             align-items: center;
         }
 
-        h1 {
-            font-size: x-large;
-        }
+        
 
+
+        #box {
+            position: absolute;
+            top: 80px;
+            left: 60px;
+            padding: 3px 20px;
+            height:max-content;
+        }
         
     </style>
 </head>
 
 <body>
     <nav id="nav">
-        <div class="logo">R</div>
+        <div class="Logo">R</div>
         <ul>
             <li><a href="#home"> Home</a></li>
             <li><a href="#">Project</a></li>
@@ -115,21 +124,21 @@
     </nav>
     <div class="banner">
         <img src="./ProjectImage.png" alt="banner">
-        
+        <button id="box"><span style="color: red;">70% Off </span>for first 3 months</button>
     </div>
     <a href="#">
-        <div id="btn">Buy Rogan&nbsp; <i class="fa-solid fa-arrow-right-long"></i></div>
+        <div id="button">Buy Rogan&nbsp; <i class="fa-solid fa-arrow-right-long"></i></div>
     </a>
     <footer>
-        <h1 id="name"></h1>
-        <h1 id="uro"></h1>
-        <h1 id="col"></h1>
+        <h1 id="Name"></h1>
+        <h1 id="Roll"></h1>
+        <h1 id="College"></h1>
         <h1 id="date"></h1>
     </footer>
     <script>
-        document.getElementById("name").textContent = "Monishka Singh";
-        document.getElementById("uro").textContent = "201500412";
-        document.getElementById("col").textContent = "GLA University, Mathura";
+        document.getElementById("Name").textContent = "Monishka Singh";
+        document.getElementById("Roll").textContent = "201500412";
+        document.getElementById("College").textContent = "GLA University, Mathura";
         window.onload = date;
         function date() {
             var d = new Date();
@@ -140,5 +149,7 @@
             document.getElementById("date").textContent = `${date}`;
         }
     </script>
+
+
 </body>
 </html>
